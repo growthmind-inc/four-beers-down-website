@@ -1,0 +1,33 @@
+{
+  "name": "four-beers-down-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint && yarn typecheck"
+  },
+  "dependencies": {
+    "@mantine/core": "^8.3.13",
+    "@mantine/hooks": "^8.3.13",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.29.2",
+    "next": "16.1.6",
+    "postcss": "^8.5.6",
+    "postcss-preset-mantine": "^1.18.0",
+    "postcss-simple-vars": "^7.0.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.9",
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "16.1.6",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "yarn@4.12.0"
+}
