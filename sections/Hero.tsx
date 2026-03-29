@@ -73,7 +73,7 @@ export default function Hero() {
           </ScrollReveal>
           <ScrollReveal delay={2}>
             <div className="hero-actions">
-              <a href="#" className="btn-hero">
+              <a href="#buy" className="btn-hero">
                 🛒 Order Now — $24.99
               </a>
               <a href="#try" className="btn-ghost">

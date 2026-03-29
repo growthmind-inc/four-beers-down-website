@@ -836,6 +836,55 @@ nav.site-nav.scrolled {
   z-index: 1;
 }
 
+.waitlist-badge {
+  display: inline-block;
+  background: var(--red);
+  color: var(--white);
+  padding: 8px 24px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.waitlist-form {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.waitlist-input {
+  padding: 18px 28px;
+  border-radius: 100px;
+  border: 2px solid var(--gray-200);
+  font-size: 16px;
+  font-family: var(--font-outfit), sans-serif;
+  outline: none;
+  min-width: 300px;
+  transition: border-color 0.3s;
+  background: var(--white);
+}
+
+.waitlist-input:focus {
+  border-color: var(--red);
+}
+
+.waitlist-success {
+  font-size: 18px;
+  color: var(--red);
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
 /* ── FOOTER ── */
 footer.site-footer {
   border-top: 1px solid var(--gray-200);

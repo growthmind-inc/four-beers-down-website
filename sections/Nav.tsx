@@ -20,7 +20,7 @@ export default function Nav() {
         <a href="#how">How It Works</a>
         <a href="#try">Try a Card</a>
         <a href="#reviews">Reviews</a>
-        <a href="#" className="btn-buy">
+        <a href="#buy" className="btn-buy">
           Buy Now &rarr;
         </a>
       </div>
