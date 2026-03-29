@@ -927,20 +927,56 @@ footer.site-footer {
 
 @media (max-width: 900px) {
   nav.site-nav {
-    padding: 16px 24px;
+    padding: 16px 20px;
+  }
+
+  /* Logo: prevent wrapping on small screens */
+  .logo {
+    font-size: 17px;
+    white-space: nowrap;
   }
 
   .nav-links a:not(.btn-buy) {
     display: none;
   }
 
+  .btn-buy {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
   .hero {
-    padding: 120px 24px 60px;
+    padding: 110px 20px 60px;
   }
 
   .hero-inner {
     grid-template-columns: 1fr;
     gap: 48px;
+  }
+
+  /* h1: scale down to prevent overflow on narrow screens */
+  .hero-text h1 {
+    font-size: clamp(36px, 9vw, 52px);
+    letter-spacing: -1px;
+  }
+
+  .hero-text .subtitle {
+    font-size: 17px;
+    max-width: 100%;
+  }
+
+  /* Proof row: wrap on narrow screens, tighten gap */
+  .hero-proof {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .proof-num {
+    font-size: 26px;
+  }
+
+  .proof-label {
+    font-size: 12px;
   }
 
   .hero-visual {
@@ -949,7 +985,7 @@ footer.site-footer {
 
   .section,
   .reviews-section {
-    padding: 80px 24px;
+    padding: 80px 20px;
   }
 
   .how-steps,
@@ -959,7 +995,7 @@ footer.site-footer {
   }
 
   .flip-section {
-    padding: 80px 24px;
+    padding: 80px 20px;
   }
 
   .flip-grid {
@@ -972,13 +1008,64 @@ footer.site-footer {
   }
 
   .cta {
-    padding: 100px 24px;
+    padding: 100px 20px;
   }
 
   footer.site-footer {
     flex-direction: column;
     gap: 20px;
     text-align: center;
-    padding: 36px 24px;
+    padding: 36px 20px;
+  }
+
+  .foot-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+/* Extra small screens (iPhone SE, 375px) */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: clamp(32px, 8.5vw, 42px);
+    letter-spacing: -0.5px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-hero,
+  .btn-ghost {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-proof {
+    gap: 16px;
+  }
+
+  .proof-num {
+    font-size: 22px;
+  }
+
+  .waitlist-input {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .waitlist-form {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .flip-card {
+    height: 190px;
   }
 }
